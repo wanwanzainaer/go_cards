@@ -5,5 +5,9 @@ func main() {
 	// card := "Ace of Spades"'
 	// card := newCard()
 	cards := newDeck()
-	cards.print()
+
+	handCard, remainingDeck := deal(cards, 5)
+	handCard.print()
+	remainingDeck.print()
+	// cards.print()
 }
